@@ -1,4 +1,4 @@
-﻿# STOIXLAB Website
+# STOIXLAB Website
 
 Static website for STOIXLAB.
 
