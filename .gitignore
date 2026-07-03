@@ -31,3 +31,4 @@ __pycache__/
 credentials
 credentials.*
 config.local.*
+*.bak_phase1
