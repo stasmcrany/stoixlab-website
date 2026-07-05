@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #08111f;
   --bg-soft: #101927;
   --bg-muted: #f5f7fa;
@@ -86,6 +86,12 @@ a:hover {
 
 .nav a {
   color: var(--text-light);
+  transition: color 0.18s ease;
+}
+
+.nav a:hover {
+  color: #ff9900;
+  text-decoration: none;
 }
 
 .hero {
@@ -167,6 +173,11 @@ a:hover {
   color: var(--muted);
 }
 
+.section:has(.cards) h2,
+.section:has(.grid-list) h2 {
+  text-align: center;
+}
+
 .muted {
   background: var(--bg-muted);
 }
@@ -177,6 +188,12 @@ a:hover {
   gap: 22px;
   margin-top: 28px;
   align-items: stretch;
+}
+
+@media (min-width: 901px) {
+  .cards > .card:nth-child(4):last-child {
+    grid-column: 2;
+  }
 }
 
 .card {
@@ -207,13 +224,15 @@ a:hover {
 }
 
 .grid-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
   margin-top: 28px;
 }
 
 .grid-list div {
+  flex: 0 1 calc((100% - 42px) / 4);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 18px;
@@ -324,8 +343,8 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .grid-list {
-    grid-template-columns: repeat(2, 1fr);
+  .grid-list div {
+    flex-basis: calc((100% - 14px) / 2);
   }
 
   .footer-inner {
@@ -360,8 +379,8 @@ a:hover {
     padding: 52px 0;
   }
 
-  .grid-list {
-    grid-template-columns: 1fr;
+  .grid-list div {
+    flex-basis: 100%;
   }
 
   .nav {

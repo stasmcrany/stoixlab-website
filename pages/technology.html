@@ -72,6 +72,33 @@
     </section>
 
     <section class="section muted">
+      <div class="container narrow">
+        <h2>AWS serverless-native architecture</h2>
+        <p>
+          STOIXLAB uses AWS as an engineering environment for AWS-focused products, especially stoiXDome.
+          Serverless-native here means an architecture preference: managed compute, managed state, event queues,
+          managed APIs, object storage, identity controls, audit trails, monitoring, and controlled failure behavior.
+        </p>
+        <p>
+          The public website does not list every AWS service used by the company. That would turn the technology
+          page into a vendor inventory and would age badly as the architecture evolves. Instead, the important point
+          is the operating model: event-driven components, managed cloud primitives, evidence-oriented storage,
+          controlled synchronization, and security boundaries designed around AWS-native deployment patterns.
+        </p>
+        <p>
+          In practice, this model may involve services such as Lambda, DynamoDB, SQS, SNS, API Gateway, S3,
+          IAM, CloudWatch, CloudTrail, KMS, Athena, and other AWS capabilities where they fit the workload.
+          The exact service mix depends on the product, module, environment, and deployment stage.
+        </p>
+        <p>
+          The goal is not to advertise AWS or claim infinite scale. The goal is to reduce operational burden,
+          build on managed cloud primitives responsibly, and keep security, traceability, auditability, and
+          controlled degradation as core design requirements.
+        </p>
+      </div>
+    </section>
+
+    <section class="section muted">
       <div class="container">
         <h2>Technology layers</h2>
 
@@ -213,7 +240,7 @@
         <h2>Responsible technology positioning</h2>
 
         <div class="grid-list">
-          <div>Cloud-state analysis</div>
+          <div>AWS-focused cloud-state analysis</div>
           <div>Graph-vector evidence</div>
           <div>Protected signal movement</div>
           <div>Temporal state review</div>
@@ -221,6 +248,8 @@
           <div>Evidence-oriented reporting</div>
           <div>Cloud-readiness discussion</div>
           <div>Future product packaging potential</div>
+          <div>AWS serverless-native services</div>
+          <div>Managed event-driven architecture</div>
         </div>
       </div>
     </section>
