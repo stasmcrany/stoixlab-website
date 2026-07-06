@@ -63,10 +63,9 @@
           transported, preserved, governed, and reported.
         </p>
         <p>
-          The technology stack is not presented as a replacement for standard cloud security,
-          encryption, TLS, AES, KMS, or established compliance controls. It is positioned as
-          a proprietary trust-infrastructure and signal-processing layer that works around
-          cloud-state analysis, protected signal movement, evidence construction, and operational review.
+          The technology stack adds a proprietary trust-infrastructure and signal-processing layer around
+          cloud-state analysis, protected signal movement, evidence construction, and operational review,
+          while relying on established cloud security, encryption, identity, audit, and compliance controls.
         </p>
       </div>
     </section>
@@ -80,10 +79,9 @@
           managed APIs, object storage, identity controls, audit trails, monitoring, and controlled failure behavior.
         </p>
         <p>
-          The public website does not list every AWS service used by the company. That would turn the technology
-          page into a vendor inventory and would age badly as the architecture evolves. Instead, the important point
-          is the operating model: event-driven components, managed cloud primitives, evidence-oriented storage,
-          controlled synchronization, and security boundaries designed around AWS-native deployment patterns.
+          The important point is the operating model: event-driven components, managed cloud primitives,
+          evidence-oriented storage, controlled synchronization, and security boundaries designed around
+          AWS-native deployment patterns.
         </p>
         <p>
           In practice, this model may involve services such as Lambda, DynamoDB, SQS, SNS, API Gateway, S3,
@@ -91,9 +89,8 @@
           The exact service mix depends on the product, module, environment, and deployment stage.
         </p>
         <p>
-          The goal is not to advertise AWS or claim infinite scale. The goal is to reduce operational burden,
-          build on managed cloud primitives responsibly, and keep security, traceability, auditability, and
-          controlled degradation as core design requirements.
+          This approach reduces operational burden, builds on managed cloud primitives responsibly, and keeps
+          security, traceability, auditability, and controlled degradation as core design requirements.
         </p>
       </div>
     </section>
@@ -124,9 +121,8 @@
               inside the stoiXDome technology stack.
             </p>
             <p>
-              It supports low-latency packet-state evolution, entropy shaping, and signal
-              transformation. It should not be described as replacing TLS, AES, KMS, or
-              standard cryptographic systems.
+              It supports low-latency packet-state evolution, entropy shaping, and signal transformation
+              as part of the proprietary processing layer around established cryptographic and cloud-security controls.
             </p>
           </article>
 
@@ -221,21 +217,53 @@
       </div>
     </section>
 
+
     <section class="section">
       <div class="container narrow">
-        <h2>How the layers connect</h2>
+        <h2>Adapter and protected transport role</h2>
         <p>
-          State Analyzer interprets cloud state and identity risk. Titanium Adapters transform
-          external inputs into graph-vector signals. Cloud Bridge and Secure Overlay move
-          controlled or trust-checkable signals. Titanium Core supports mathematical packet-state
-          transformation. Dynamic Resonance Matrix links authority and analysis depth.
-          Temporal Navigator preserves state history and recovery context. Evidence Reporter
-          turns the result into structured human-readable output.
+          Titanium / Cloud Bridge Adapters simplify AWS service operations by transforming identity relationships,
+          CloudTrail activity, infrastructure events, telemetry, and security findings into normalized graph-vector workflows.
+        </p>
+        <p>
+          Frontier / Secure Overlay then provides protected signal transport for those workflows, supporting structured routing,
+          verification, JSON and binary ingress patterns, and delivery of cloud-state evidence across the stoiXDome trust-infrastructure stack.
         </p>
       </div>
     </section>
 
     <section class="section muted">
+      <div class="container narrow">
+        <h2>How the layers connect</h2>
+        <p>
+          The STOIXLAB architecture is designed as a layered trust-infrastructure model: State Analyzer interprets;
+          Titanium / Cloud Bridge transforms; Frontier / Secure Overlay transports; Dynamic Resonance Matrix validates;
+          Temporal Navigator preserves state; Governance controls; Evidence Reporter explains.
+        </p>
+        <p>
+          This means the public technology story is not a loose list of tools. It is a chain of assessment,
+          transformation, protected transport, validation, controlled memory, governance, and reviewable evidence.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container narrow">
+        <h2>Security and privacy operating model</h2>
+        <p>
+          STOIXLAB products are designed around customer-controlled deployment and no external data export by default.
+          Sensitive cloud-state evidence, event records, generated reports, and operational context should remain inside
+          the customer-controlled environment unless a policy-authorized workflow requires otherwise.
+        </p>
+        <p>
+          The architecture supports sanitized AI-assisted policy analysis, configurable retention, private evidence and
+          report delivery, policy-governed emergency response, and optional external emergency integrations for approved scenarios.
+        </p>
+      </div>
+    </section>
+
+<section class="section muted">
       <div class="container">
         <h2>Responsible technology positioning</h2>
 
