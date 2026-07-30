@@ -407,8 +407,17 @@ a:hover {
 }
 
 /* Text-only block alignment */
+.grid-list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .card.text-only-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -423,9 +432,21 @@ a:hover {
   margin-bottom: 0;
 }
 
-.grid-list > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+@supports selector(.card:has(h3)) {
+  .card:not(:has(h1, h2, h3, h4, h5, h6)) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100%;
+  }
+
+  .card:not(:has(h1, h2, h3, h4, h5, h6)) > *:first-child {
+    margin-top: 0;
+  }
+
+  .card:not(:has(h1, h2, h3, h4, h5, h6)) > *:last-child {
+    margin-bottom: 0;
+  }
 }
