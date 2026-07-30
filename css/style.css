@@ -405,3 +405,27 @@ a:hover {
   color: #ff9900;
   margin-left: 1px;
 }
+
+/* Text-only block alignment */
+.card.text-only-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100%;
+}
+
+.card.text-only-card > *:first-child {
+  margin-top: 0;
+}
+
+.card.text-only-card > *:last-child {
+  margin-bottom: 0;
+}
+
+.grid-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
