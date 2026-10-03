@@ -1,293 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>stoiXDome — AWS-Focused Cloud-Security Evidence Platform</title>
-  <meta name="description" content="stoiXDome is the primary STOIXLAB platform direction for AWS-focused cloud-security evidence review, structured reporting, and read-only security assessment workflows." />
-  <link rel="stylesheet" href="../css/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>stoiXDome — STOIXLAB</title>
+<meta content="stoiXDome provides cloud infrastructure assurance across AWS, Azure, and GCP with evidence, temporal investigation, trust topology, change assurance, and outcome verification." name="description"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
 </head>
-<body>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo"><span class="logo-stoix">stoiX</span><span class="logo-lab">Lab</span></div>
-      <nav class="nav">
-        <a href="../index.html">Home</a>
-        <a href="aws-review.html">AWS Review</a>
-        <a href="technology.html">Technology</a>
-        <a href="stoixdome.html">stoiXDome</a>
-        <a href="stoixguard.html">stoiXGuard</a>
-        <a href="stoixsea.html">stoiXSea</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Primary flagship platform direction · AWS-specific · Serverless-native</p>
-        <h1>stoiXDome — AWS-focused cloud-security evidence and review platform direction.</h1>
-        <p class="hero-text">
-          stoiXDome is the primary platform direction of STOIXLAB: an AWS-focused cloud-security evidence platform designed around managed AWS services, event-driven execution,
-          cloud-state evidence, review-context handling, structured evidence workflows, state-history context,
-          human-reviewed reporting, and responsible public communication boundaries.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="technology.html">Explore technology</a>
-          <a class="button secondary" href="contact.html">Discuss stoiXDome</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="review-strip" aria-label="stoiXDome status">
-      <div class="container review-strip-inner">
-        <p class="review-strip-label">Platform status</p>
-        <ul class="review-strip-items">
-          <li>CONTROLLED REVIEW READY</li>
-          <li>CONTROLLED REVIEW</li>
-          <li>Public-safe platform overview</li>
-          <li>Internal implementation not publicly disclosed</li>
-          <li>Read-only review boundary</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <h2>Platform overview</h2>
-        <p>
-          stoiXDome is designed as an AWS-specific, serverless-native cloud-security evidence platform
-          for situations where AWS cloud state, identity exposure, operational signals, evidence, and recovery context
-          must be understood as one connected system.
-        </p>
-        <p>
-          stoiXDome is not positioned as a generic multi-cloud scanner. Its current product direction is AWS-specific:
-          deeper AWS state discovery, AWS-native architecture, controlled evidence generation, serverless-native deployment,
-          and evidence-oriented workflows for AWS environments.
-        </p>
-        <p>
-          The preferred deployment model is AWS serverless-native: managed APIs, event-driven compute, managed state,
-          queue-based processing, durable object storage, and notification flows. This keeps the product deployment-light
-          and scalable without claiming limitless scale, AWS approval, or serverless as an absolute marketing slogan.
-        </p>
-        <p>
-          The platform direction is broader than a simple scanner. In public terms, it reviews AWS cloud state,
-          connects selected evidence into reviewable context through
-          controlled review workflows, preserves state-history context, applies scope-based review boundaries,
-          and produces structured reports for technical and external review.
-        </p>
-        <p>
-          In practical terms, stoiXDome helps teams answer: what changed in an AWS environment,
-          which identities or policies create exposure, what evidence supports that finding,
-          what state history matters, and what response workflow is allowed by policy.
-        </p>
-      </div>
-    </section>
-
-    <section class="section muted">
-      <div class="container">
-        <h2>Public product areas</h2>
-
-        <div class="cards">
-          <article class="card">
-            <p class="tag">Assessment</p>
-            <h3>AWS evidence review</h3>
-            <p>
-              Public review area for IAM topology, policy exposure,
-              cloud-state evidence, business impact, and remediation context.
-            </p>
-            <p>
-              The review workflow turns selected AWS evidence into structured findings and review-ready
-              assessment output.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="tag">State history</p>
-            <h3>State-history review</h3>
-            <p>
-              State-history, snapshot, replay, and recovery planning layer for controlled temporal review.
-            </p>
-            <p>
-              State-history review provides time-bounded archives, snapshots, operational memory, and recovery context.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="tag">Validation model</p>
-            <h3>Risk-prioritized review model</h3>
-            <p>
-              The review model compares identity, event,
-              telemetry, and state signals to detect meaningful risk patterns and support evidence-based review.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="tag">Reports</p>
-            <h3>Evidence reporting</h3>
-            <p>
-              Structured technical and operational evidence reports for operators, consultants,
-              reviewers, legal/economic stakeholders, and external decision-makers.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="tag">Governance</p>
-            <h3>Review governance model</h3>
-            <p>
-              Review governance controls scope, assumptions,
-              available evidence areas, and review boundaries.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <h2>Implementation boundary</h2>
-        <p>
-          internal evidence-processing components form the AWS-facing adapter and protected
-          signal-transport layer inside stoiXDome, connecting AWS service operations with
-          structured evidence workflows and controlled delivery.
-        </p>
-      </div>
-
-      <div class="container">
-        <div class="cards">
-          <article class="card">
-            <p class="tag">Protected transport</p>
-            <h3>Controlled review workflow</h3>
-            <p>
-              Publicly, this area is described as a controlled review workflow for evidence routing,
-              evidence handling, and movement of cloud-state context
-              across the stoiXDome trust-infrastructure stack.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="tag">AWS-facing transformation</p>
-            <h3>AWS evidence processing</h3>
-            <p>
-              Publicly, this area is described as AWS evidence normalization across identity
-              relationships, CloudTrail activity, infrastructure events, telemetry, and security
-              findings for analysis, evidence generation,
-              and governance.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <div class="container narrow">
-        <p>
-          In public terms, stoiXDome is presented as more than a simple scanner: it turns selected
-          AWS operations into structured, transportable, and reviewable evidence context that
-          support security assessment, operational evidence, planning, and
-          future product development.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>First practical use cases</h2>
-
-        <div class="grid-list">
-          <div>IAM exposure review</div>
-          <div>CloudTrail and infrastructure event review</div>
-          <div>Cloud-state snapshot</div>
-          <div>Evidence report for technical or business review</div>
-          <div>Policy-governed response workflow</div>
-          <div>Private stoiXDome review or AWS cloud-security assessment</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted">
-      <div class="container">
-        <h2>Who uses it</h2>
-
-        <div class="grid-list">
-          <div>Security reviewers</div>
-          <div>Cloud operators</div>
-          <div>DevOps and infrastructure teams</div>
-          <div>Cloud consultants and MSPs</div>
-          <div>Founders preparing for due diligence</div>
-          <div>Compliance-facing technical teams</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <h2>How the public review model works</h2>
-        <p>
-          stoiXDome follows an AWS-focused evidence-review model. The public workflow reviews
-          AWS identity, logging, runtime, infrastructure, and security signals, then organizes them into structured findings and risk-prioritized report sections.
-          The internal implementation remains private. Public communication focuses on review scope,
-          evidence quality, read-only boundaries, and human-reviewed reporting.
-        </p>
-      </div>
-    </section>
-
-    <section class="section muted">
-      <div class="container">
-        <h2>Operational value</h2>
-
-        <div class="grid-list">
-          <div>AWS evidence visibility</div>
-          <div>Identity-risk analysis</div>
-          <div>Structured evidence</div>
-          <div>Controlled telemetry context</div>
-          <div>State-history context</div>
-          <div>State-history review context</div>
-          <div>Scope-based review</div>
-          <div>Structured evidence reports</div>
-          <div>AWS-native deployment direction</div>
-          <div>Serverless-native architecture fit</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <h2>Current public boundary</h2>
-        <p>
-          stoiXDome is presented as a primary flagship platform direction under controlled review and a serious
-          technology foundation for legal, relocation, economic-review, partnership, and future
-          cloud ecosystem discussions.
-        </p>
-        <p>
-          Public materials should avoid unsupported certification claims, premature sales language, or aggressive security terminology. The current site focuses on platform credibility,
-          technical structure, and responsible product positioning.
-        </p>
-      </div>
-    </section>
-
-    <section class="section cta">
-      <div class="container narrow">
-        <h2>Discuss <span class="brand-inline"><span class="brand-stoix">stoiX</span><span class="brand-lab">Dome</span></span></h2>
-        <p>
-          Contact STOIXLAB for legal or relocation review, economic-review questions,
-          partnership discussions, cloud-security platform context, or future cloud-readiness conversations.
-        </p>
-        <a class="button primary" href="contact.html">Contact STOIXLAB</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 STOIXLAB. All rights reserved.</p>
-      <p>Cloud security · Structured evidence · Read-only review</p>
-    </div>
-  </footer>
-
-</body>
-</html>
-
+<body><header class="site-header">
+<div class="container header-inner">
+<a aria-label="STOIXLAB home" class="logo logo-link" href="../index.html"><span class="logo-stoix">stoiX</span><span class="logo-lab">Lab</span></a>
+<nav class="nav"><a href="consulting.html">Consulting &amp; Services</a><a href="stoix-base.html">stoiXBase</a><a class="current" href="stoixdome.html">stoiXDome</a><a href="stoixguard.html">stoiXGuard</a><a href="stoixlaw.html">stoiXLaw</a><a href="horizons.html">Research &amp; Horizons</a><a href="contact.html">Contact</a></nav>
+</div>
+</header><main>
+<section class="hero"><div class="container">
+<p class="eyebrow">Cloud &amp; Digital Infrastructure</p>
+<h1>stoiXDome</h1>
+<p class="hero-subtitle">Cloud Infrastructure Assurance at the Level of Real Topology, State, and Evidence</p><div aria-label="Product maturity" class="hero-status production">
+<span class="hero-status-badge">PRODUCTION / CLIENT-READY</span>
+<p class="hero-status-text">Available for real client use. Validation and refinement continue as part of the normal product lifecycle.</p>
+</div>
+<p class="hero-text">stoiXDome investigates the cloud environment as a connected operational system in which identities, trust, workloads, permissions, resources, and runtime dependencies are evaluated within a unified context. Instead of stopping at an isolated security finding, Dome reconstructs meaningful relationships, temporal state, and available evidence to show why a given condition represents risk and which parts of the infrastructure are connected to it.</p><p class="hero-text">The practical value of this approach becomes especially clear during remediation: the engineer receives not only an indication of the problem, but also dependency context, change constraints, rollback considerations, and a basis for subsequent verification. After the action, Dome re-observes the environment and compares the actual state with the required outcome.</p><p class="hero-text">stoiXDome therefore carries an engineering case from an identified cloud risk through investigation and qualified change to an independently verified result, while preserving the provider-native semantics of AWS, Azure, and GCP together with the common STOIX evidence and authority discipline.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px;"><span class="tag">Multi-Cloud</span><span class="tag">NHI</span><span class="tag">Change Assurance</span><span class="tag">Outcome Verification</span></div><div class="hero-actions"><a class="button primary" href="contact.html">Discuss stoiXDome</a></div>
+</div></section>
+<section class="section"><div class="container narrow"><h2>From Finding to System Context</h2><p>An isolated configuration finding rarely shows which relationships create the risk, what depends on a permission, when the current state emerged, which change is acceptable, or which evidence confirms the result.</p><p>Dome connects these questions into one investigation and resolution lifecycle.</p></div></section>
+<section class="section muted"><div class="container"><h2>What Distinguishes stoiXDome</h2><div class="cards"><article class="card"><h3>Hidden Trust &amp; Access Paths</h3><p>Identity, roles, trust, workloads, and resources are evaluated as a topology.</p></article><article class="card"><h3>Non-Human Identity</h3><p>Service accounts, workload identities, and CI/CD roles are connected to ownership, privileges, workloads, trust, and evidence.</p></article><article class="card"><h3>Temporal Investigation</h3><p>Configuration changes, trust changes, incidents, and remediation attempts become part of a single state history.</p></article><article class="card"><h3>Change Assurance</h3><p>A candidate change is evaluated together with dependencies, constraints, rollback, freshness, and authority requirements.</p></article><article class="card"><h3>Independent Verification</h3><p>After a change, Dome re-examines the environment and compares the new state with the required outcome.</p></article></div></div></section>
+<section class="section"><div class="container narrow"><h2>Multi-Cloud Architecture</h2><p>AWS, Azure, and GCP retain their provider-native semantics.</p><p>Rosetta and Universal Projection create a common analytical layer where meaningful semantic correspondence exists.</p></div></section>
+<section class="section cta"><div class="container narrow"><h2>Dome as a STOIX Realization</h2><p>Dome brings together evidence acquisition, semantic normalization, canonical and temporal state, relationship analysis, governance, reporting, and outcome verification.</p><p>This makes stoiXDome the first primary commercial realization of the STOIX architecture.</p><a class="button primary" href="contact.html">Discuss stoiXDome</a></div></section>
+</main><footer class="site-footer">
+<div class="container footer-inner">
+<p>© 2026 STOIXLAB. All rights reserved.</p>
+<p>Evidence · Decisions · Authority · Verified Outcomes</p>
+</div>
+</footer></body></html>
