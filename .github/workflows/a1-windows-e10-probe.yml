@@ -1,0 +1,16 @@
+name: A1 Windows E10 Probe
+on:
+  push:
+    branches:
+      - a1-windows-e10-probe-20261102
+jobs:
+  windows-e10-probe:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - name: Confirm Windows runner allocation
+        shell: pwsh
+        run: |
+          Write-Host "WINDOWS_HOSTED_RUNNER_ALLOCATED=YES"
+          Write-Host ("PSVERSION=" + $PSVersionTable.PSVersion.ToString())
+          Write-Host ("OS=" + [System.Environment]::OSVersion.VersionString)
